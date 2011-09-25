@@ -5,7 +5,7 @@ Summary:	K Desktop Environment - program to help you memorize things
 Summary(pl.UTF-8):	K Desktop Environment - program pomagający w zapamiętywaniu
 Name:		parley
 Version:	4.7.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -13,6 +13,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version
 URL:		http://www.kde.org/
 BuildRequires:	attica-devel
 BuildRequires:	kde4-kdelibs-devel >= %{version}
+BuildRequires:	libkdeedu-devel >= %{version}
 BuildRequires:	libxml2-devel
 BuildRequires:	libxslt-devel
 Obsoletes:	kde4-kdeedu-parley < 4.7.0
