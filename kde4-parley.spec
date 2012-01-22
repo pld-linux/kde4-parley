@@ -3,20 +3,21 @@
 
 Summary:	K Desktop Environment - program to help you memorize things
 Summary(pl.UTF-8):	K Desktop Environment - program pomagający w zapamiętywaniu
-Name:		parley
-Version:	4.7.3
+Name:		kde4-parley
+Version:	4.8.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	896b88f3f0bdab177a6beabfc9b0b380
+# Source0-md5:	92608ce548515a53191705c94af46628
 URL:		http://www.kde.org/
 BuildRequires:	attica-devel
 BuildRequires:	kde4-kdelibs-devel >= %{version}
-BuildRequires:	libkdeedu-devel >= %{version}
+BuildRequires:	kde4-libkdeedu-devel >= %{version}
 BuildRequires:	libxml2-devel
 BuildRequires:	libxslt-devel
 Obsoletes:	kde4-kdeedu-parley < 4.7.0
+Obsoletes:	parley <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,12 +43,12 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
-%find_lang %{name} --with-kde
+%find_lang %{orgname} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files -f %{orgname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/parley
 %attr(755,root,root) %{_libdir}/kde4/plasma_applet_parley.so
