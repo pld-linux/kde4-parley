@@ -4,12 +4,12 @@
 Summary:	K Desktop Environment - program to help you memorize things
 Summary(pl.UTF-8):	K Desktop Environment - program pomagający w zapamiętywaniu
 Name:		kde4-parley
-Version:	4.9.4
+Version:	4.10.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	4145641d1d5abbd79c964b2091e9b2ad
+# Source0-md5:	ce1c5072926d0b324a729247e231acd2
 URL:		http://www.kde.org/
 BuildRequires:	attica-devel
 BuildRequires:	automoc4
