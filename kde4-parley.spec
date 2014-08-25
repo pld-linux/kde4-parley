@@ -4,12 +4,12 @@
 Summary:	K Desktop Environment - program to help you memorize things
 Summary(pl.UTF-8):	K Desktop Environment - program pomagający w zapamiętywaniu
 Name:		kde4-parley
-Version:	4.13.2
+Version:	4.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	4c20a70f42457e9c26486a9780dd7c87
+Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
+# Source0-md5:	0d1afba02602a382a13dd397387e84b6
 URL:		http://www.kde.org/
 BuildRequires:	attica-devel
 BuildRequires:	automoc4
@@ -57,6 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/plasma_applet_parley.so
 %attr(755,root,root) %{_libdir}/kde4/plasma_engine_parley.so
 %{_desktopdir}/kde4/parley.desktop
+%{_datadir}/appdata/parley.appdata.xml
 %{_datadir}/apps/desktoptheme/default/widgets/parley_plasma_card.svg
 %{_datadir}/apps/parley
 %{_datadir}/config.kcfg/*.kcfg
